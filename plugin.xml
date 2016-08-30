@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-admob-m-chartboost"
+        version="1.0.0">
+      
+    <name>Chartboost mediation for AdMob</name>
+    <description>Add Chartboost mediation to AdMob cordova plugin</description>
+    <author>Nonostante</author>
+    <keywords>cordova,admob,chartboost</keywords>
+    <repo>https://github.com/nonostante/cordova-plugin-admob-m-chartboost.git</repo>
+    <issue>https://github.com/nonostante/cordova-plugin-admob-m-chartboost/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0" />
+    </engines>
+
+    <platform name="android">
+        <source-file src="src/android/ChartboostAdapter.jar" target-dir="libs" />
+     </platform>
+
+     <platform name="ios">
+        <header-file src="src/ios/GADMChartboostExtras.h" />
+        <source-file src="src/ios/libAdapterChartboostAds.a" framework="true"/>
+    </platform>
+
+</plugin>
